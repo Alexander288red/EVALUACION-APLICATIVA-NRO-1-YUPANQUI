@@ -31,6 +31,10 @@
             <p><strong>Nombre:</strong> <span th:text="${producto.nombre}"></span></p>
             <p><strong>Precio:</strong> <span th:text="${producto.precio}"></span></p>
             <p><strong>Categoría:</strong> <span th:text="${producto.categoria}"></span></p>
+            <p><strong>Fecha de Caducidad:</strong> <span th:text="${producto.fechaCaducidad}"></span></p>
+            <p><strong>Stock Mínimo:</strong> <span th:text="${producto.stockMinimo}"></span></p>
+            <p><strong>Stock Máximo:</strong> <span th:text="${producto.stockMaximo}"></span></p>
+            <p><strong>Marca:</strong> <span th:text="${producto.marca}"></span></p>
         </div>
         <a href="/producto/registrar" class="btn btn-primary">Registrar otro producto</a>
     </div>

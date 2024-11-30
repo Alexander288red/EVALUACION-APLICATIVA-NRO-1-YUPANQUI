@@ -5,15 +5,20 @@
 package com.example.EJERCICIO2.model;
 
 public class Producto {
- private String nombre;
+    private String nombre;
     private String codigo;
     private String descripcion;
     private String categoria;
     private int cantidad;
     private double precio;
     private String fechaIngreso;
+    private String fechaCaducidad;  // Nuevo campo para la fecha de caducidad
+    private int stockMinimo;        // Nuevo campo para el stock mínimo
+    private int stockMaximo;        // Nuevo campo para el stock máximo
+    private String marca;           // Nuevo campo para la marca
 
     // Getters y Setters
+
     public String getNombre() {
         return nombre;
     }
@@ -62,5 +67,36 @@ public class Producto {
     public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
-}
 
+    // Nuevo getter y setter para fecha de caducidad
+    public String getFechaCaducidad() {
+        return fechaCaducidad;
+    }
+    public void setFechaCaducidad(String fechaCaducidad) {
+        this.fechaCaducidad = fechaCaducidad;
+    }
+
+    // Nuevo getter y setter para stock mínimo
+    public int getStockMinimo() {
+        return stockMinimo;
+    }
+    public void setStockMinimo(int stockMinimo) {
+        this.stockMinimo = stockMinimo;
+    }
+
+    // Nuevo getter y setter para stock máximo
+    public int getStockMaximo() {
+        return stockMaximo;
+    }
+    public void setStockMaximo(int stockMaximo) {
+        this.stockMaximo = stockMaximo;
+    }
+
+    // Nuevo getter y setter para marca
+    public String getMarca() {
+        return marca;
+    }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+}

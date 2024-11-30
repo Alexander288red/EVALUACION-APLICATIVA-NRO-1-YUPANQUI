@@ -120,6 +120,19 @@
         <label>Fecha de Ingreso:</label>
         <input type="date" th:field="*{fechaIngreso}" required>
 
+        <!-- Nuevos campos agregados -->
+        <label>Fecha de Caducidad:</label>
+        <input type="date" th:field="*{fechaCaducidad}" required>
+
+        <label>Stock Mínimo:</label>
+        <input type="number" th:field="*{stockMinimo}" placeholder="Ej: 10" required>
+
+        <label>Stock Máximo:</label>
+        <input type="number" th:field="*{stockMaximo}" placeholder="Ej: 200" required>
+
+        <label>Marca:</label>
+        <input type="text" th:field="*{marca}" placeholder="Ej: Samsung" required>
+
         <button type="submit">Registrar Producto</button>
     </form>
 </body>
